@@ -11,13 +11,12 @@ body {
     line-height: 1;
     background-color: #f8f9fa;
     overflow-x: hidden;
-    /* Impede o scroll horizontal em todo o documento */
+
 }
 
 
 .main-content {
     margin-left: 30vh;
-    /* Ajuste a margem esquerda conforme necessário */
     padding: 30px;
     transition: margin-left 0.3s ease;
 }

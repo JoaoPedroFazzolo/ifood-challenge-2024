@@ -1,22 +1,20 @@
-// Busca
 const searchInput = document.getElementById('searchInput');
 
 searchInput.addEventListener('input', function () {
-    const filter = searchInput.value.trim().toLowerCase();  // Converte o valor da busca para minúsculas
-    const tableRows = document.querySelectorAll('tbody tr');  // Seleciona todas as linhas da tabela
+    const filter = searchInput.value.trim().toLowerCase();
+    const tableRows = document.querySelectorAll('tbody tr');
 
     tableRows.forEach(function (row) {
         let rowMatches = false;
 
-        // Verifica todas as células da linha
+
         row.querySelectorAll('td').forEach(function (cell) {
-            const cellText = cell.textContent.trim().toLowerCase();  // Converte o texto da célula para minúsculas
-            if (cellText.includes(filter)) {  // Verifica se a célula contém o valor de busca
+            const cellText = cell.textContent.trim().toLowerCase();
+            if (cellText.includes(filter)) {
                 rowMatches = true;
             }
         });
 
-        // Exibe ou oculta a linha com base na correspondência
         row.style.display = rowMatches ? '' : 'none';
     });
 });

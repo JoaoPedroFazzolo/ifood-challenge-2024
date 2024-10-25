@@ -1,4 +1,3 @@
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -13,10 +12,7 @@ body {
     background-color: #f8f9fa;
     overflow-x: hidden;
     overflow-y: scroll;
-    /* overflow-y: scroll; resolve bug do modal */
 }
-
-/* Estilo do título */
 
 .main-content {
     margin-left: 300px;

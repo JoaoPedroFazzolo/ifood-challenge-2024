@@ -1,4 +1,3 @@
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +13,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Estilos da Sidebar */
 .sidebar {
     background-color: white;
     height: 100vh;
@@ -33,7 +31,7 @@ body {
 
 .sidebar img {
     vertical-align: middle;
-    margin: 5px;
+    margin: 4px;
 }
 
 .sidebar a {
@@ -51,7 +49,6 @@ body {
     color: #ff0000;
 }
 
-/* Estilo do título */
 .title {
     color: #1F2937;
     font-size: 100%;

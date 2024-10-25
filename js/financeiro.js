@@ -16,7 +16,6 @@ const horizontalCtx = document.getElementById("horizontalBarChart").getContext("
 const myModal = document.getElementById("myModal");
 const myInput = document.getElementById("myInput");
 
-// Criação dos gráficos
 const salesChart = createSalesChart(salesCtx);
 const valueSalesChart = createValueSalesChart(valueSalesCtx);
 const newClientChart = creatNewClient(newClientCtx);
@@ -33,18 +32,18 @@ function hideAllCharts() {
 
 document.querySelectorAll('input[name="btnradio"]').forEach((radio) => {
   radio.addEventListener('change', function () {
-    hideAllCharts(); // Esconder todos os gráficos
+    hideAllCharts();
     if (this.id === 'btnradio1') {
-      document.getElementById("salesChart").style.display = "block"; // Mostrar o gráfico de vendas
-      salesChart.update(); // Atualiza o gráfico caso tenha novos dados
+      document.getElementById("salesChart").style.display = "block";
+      salesChart.update();
     } else if (this.id === 'btnradio2') {
-      document.getElementById("valueSalesChart").style.display = "block"; // Mostrar gráfico de valor das vendas
+      document.getElementById("valueSalesChart").style.display = "block";
       valueSalesChart.update();
     } else if (this.id === 'btnradio3') {
-      document.getElementById("newClientChart").style.display = "block"; // Mostrar gráfico de despesas
+      document.getElementById("newClientChart").style.display = "block";
       newClientChart.update();
     } else if (this.id === 'btnradio4') {
-      document.getElementById("averageConsumptionChart").style.display = "block"; // Mostrar gráfico horizontal
+      document.getElementById("averageConsumptionChart").style.display = "block";
       averageConsumptionChart.update();
     }
   });
@@ -52,7 +51,7 @@ document.querySelectorAll('input[name="btnradio"]').forEach((radio) => {
 
 
 
-// Atualizar os gráficos com base nos checkboxes
+
 const checkboxesExpenses = {
   carne: document.getElementById("checkboxCarne"),
   bacon: document.getElementById("checkboxBacon"),
@@ -74,7 +73,7 @@ const updateCharts = () => {
   updateHorizontalChart(horizontalBarChart, checkboxesHorizontal);
 };
 
-// Registrando eventos
+
 const registerCheckboxEvents = (checkboxes, updateFunction) => {
   Object.values(checkboxes).forEach((checkbox) => {
     checkbox.addEventListener("change", updateFunction);
