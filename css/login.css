@@ -65,6 +65,7 @@ form {
 }
 
 form.sign-up-form {
+    margin-bottom: 200px;
     opacity: 0;
     z-index: 1;
 }
@@ -159,7 +160,7 @@ form.sign-in-form {
     text-transform: uppercase;
     font-weight: 600;
     margin: 10px 0;
-    line-height: 49px;
+    line-height: 50px;
     cursor: pointer;
     transition: 0.5s;
 }
@@ -294,6 +295,11 @@ form.sign-in-form {
         left: 50%;
     }
 
+
+    .sign-in-form {
+        margin-top: 500px;
+    }
+
     .panels-container {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 2fr 1fr;
@@ -337,9 +343,10 @@ form.sign-in-form {
     }
 
     .btn {
-        width: 110px;
+        width: 120px;
         height: 35px;
-        font-size: 0.7rem;
+        line-height: 35px;
+        font-size: 10px;
     }
 
     .container:before {
@@ -415,4 +422,10 @@ form.sign-in-form {
         bottom: 28%;
         left: 50%;
     }
+
+    form.sign-up-form {
+        margin-bottom: 300px;
+    }
+
+
 }
