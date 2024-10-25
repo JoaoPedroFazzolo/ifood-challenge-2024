@@ -32,7 +32,8 @@ function getSalesHeatmapWithHotspots(center, radiusKm, numPoints) {
 const points = getSalesHeatmapWithHotspots(restaurantLocation, 5, 200);
 
 // Configuração do mapa e camada de calor
-const map = L.map("map").setView([restaurantLocation.lat, restaurantLocation.lng], 13);
+const map = L.map("map", { zoomControl: false }).setView([restaurantLocation.lat,
+restaurantLocation.lng], 13);
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   maxZoom: 18,
   attribution:
