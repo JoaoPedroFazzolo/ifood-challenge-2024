@@ -297,7 +297,7 @@ form.sign-in-form {
 
 
     .sign-in-form {
-        margin-top: 500px;
+        margin-top: 450px;
     }
 
     .panels-container {
@@ -328,7 +328,7 @@ form.sign-in-form {
     }
 
     .panel .content {
-        padding-right: 15%;
+        padding-right: 10%;
         transition: transform 0.9s ease-in-out;
         transition-delay: 0.8s;
     }
