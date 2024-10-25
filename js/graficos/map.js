@@ -1,60 +1,55 @@
-const centralLocation = { lat: -23.5273, lng: -46.7325, intensity: 1.0 };
+// Localização central do restaurante
+const restaurantLocation = { lat: -23.5273, lng: -46.7325 };
 
-function getDistanceFromCenter(lat1, lng1, lat2, lng2) {
-  const R = 6371; // Raio da Terra em km
-  const dLat = ((lat2 - lat1) * Math.PI) / 180;
-  const dLng = ((lng2 - lng1) * Math.PI) / 180;
-  const a =
-    0.5 -
-    Math.cos(dLat) / 2 +
-    (Math.cos((lat1 * Math.PI) / 180) *
-      Math.cos((lat2 * Math.PI) / 180) *
-      (1 - Math.cos(dLng))) /
-      2;
-  return R * 2 * Math.asin(Math.sqrt(a));
-}
-
-function generateRadialHeatPoints(center, numPoints, maxRadius) {
+// Função para gerar pontos com maior densidade e intensidade nas áreas próximas do restaurante
+function getSalesHeatmapWithHotspots(center, radiusKm, numPoints) {
   const points = [];
+
   for (let i = 0; i < numPoints; i++) {
-    const angle = Math.random() * Math.PI * 2; 
-    const distance = Math.random() * maxRadius; 
-    const latOffset = (distance * Math.cos(angle)) / 111.32;
-    const lngOffset =
-      (distance * Math.sin(angle)) /
-      (111.32 * Math.cos((center.lat * Math.PI) / 180));
+    const angle = Math.random() * Math.PI * 2;
+
+    // Distribuição de pontos, concentrando 70% mais próximos do centro
+    const distanceFactor = i < numPoints * 0.7 ? 0.5 : 1;
+    const distanceKm = Math.sqrt(Math.random()) * radiusKm * distanceFactor;
+
+    const latOffset = (distanceKm / 111.32) * Math.cos(angle);
+    const lngOffset = (distanceKm / (111.32 * Math.cos(center.lat * (Math.PI / 180)))) * Math.sin(angle);
+
     const lat = center.lat + latOffset;
     const lng = center.lng + lngOffset;
-    
-    const distFromCenter = getDistanceFromCenter(
-      center.lat,
-      center.lng,
-      lat,
-      lng
-    );
-    const intensity = Math.max(
-      0.3,
-      center.intensity - distFromCenter / maxRadius
-    );
+
+    // Intensidade mais alta para áreas muito próximas e menor para as mais distantes
+    const intensity = i < numPoints * 0.3 ? 1.0 : Math.max(0.3, 1 - (distanceKm / radiusKm));
+
     points.push([lat, lng, intensity]);
   }
+
   return points;
 }
 
-const points = generateRadialHeatPoints(centralLocation, 2000, 15);
-const map = L.map("map").setView([-23.5273, -46.7325], 13);
+
+// Gera 500 pontos simulando vendas, com "hotspots" em áreas próximas ao restaurante
+const points = getSalesHeatmapWithHotspots(restaurantLocation, 5, 200);
+
+// Configuração do mapa e camada de calor
+const map = L.map("map").setView([restaurantLocation.lat, restaurantLocation.lng], 13);
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   maxZoom: 18,
   attribution:
     '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
 }).addTo(map);
+
 const heat = L.heatLayer(points, {
-  radius: 30,
-  blur: 20,
-  maxZoom: 17, 
+  radius: 45,
+  blur: 15,
+  maxZoom: 17,
   gradient: {
-    0.3: "lightcoral", 
-    0.5: "red",
+    0.2: "yellow",
+    0.4: "lime",
+    0.6: "orange",
+    0.8: "red",
     1.0: "darkred",
   },
 }).addTo(map);
+
+var marker = L.marker(restaurantLocation).addTo(map);
