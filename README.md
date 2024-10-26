@@ -10,7 +10,7 @@
 <td align="center" width="200"><pre><a href="https://github.com/viniciussacardi"><img src="https://avatars.githubusercontent.com/u/143439175?v=4" width="200" alt="GitHub Profile picture of Vinicius Sacardi" /><br><sub>Vinicius Sacardi</sub></a><br>@viniciussacardi</pre></td>
 <td align="center" width="200"><pre><a href="https://github.com/vinovieira"><img src="https://avatars.githubusercontent.com/u/127680187?s=400&u=6a8001ef21a16504da936b2643c38de92060b62b&v=4" width="200" alt="GitHub Profile picture of Silvino Vieira" /><br><sub>Silvino Vieira</sub></a><br>@vinovieira</pre></td>
 <td align="center" width="200"><pre><a href="https://github.com/JoaoPedroFazzolo"><img src="https://avatars.githubusercontent.com/u/143749763?v=4" width="200" alt="GitHub Profile Picture of João Pedro Fazzolo"/><br><sub>João Pedro Fazzolo</sub></a><br>@JoaoPedroFazzolo</pre></td>
-<td align="center" width="200"><pre><a href="https://github.com/Gabriel"><img src="https://avatars.githubusercontent.com/u/143749763?v=4" width="200" alt="GitHub Profile Picture of Gabriel"/><br><sub>Gabriel</sub></a><br>@Gabriel</pre></td>
+<td align="center" width="200"><pre><a href="https://github.com/biel-martins"><img src="https://avatars.githubusercontent.com/u/166630412?v=4" width="200" alt="GitHub Profile Picture of Gabriel Martins"/><br><sub>Gabriel Martins</sub></a><br>@biel-martins</pre></td>
 
 </tr>
 </table>
