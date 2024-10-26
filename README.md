@@ -36,8 +36,17 @@ Esta é uma aplicação financeira desenvolvida como parte do desafio do iFood n
 
 ## Estrutura do Projeto
 Aqui estão as seções principais da nossa apresentação. As imagens abaixo representam telas e fluxos da aplicação.
+| ![Imagem 1](/images/telas/tela-login.png) | ![Imagem 2](images/telas/tela-cadastro.png) | ![Imagem 3](images/telas/tela-fin-1.png) |
+|------------------------------------|------------------------------------|------------------------------------|
+| <p align="center">Tela de Login</p>              | <p align="center">Tela de Cadastro</p>             | <p align="center">Tela do Dashboard Financeiro (1/3)</p>           |
+
+| ![Imagem 4](images/telas/tela-fin-2.png) | ![Imagem 5](images/telas/tela-fin-3.png) | ![Imagem 6](images/telas/tela-pedidos.png) |
+|------------------------------------|------------------------------------|------------------------------------|
+| <p align="center">Tela do Dashboard Financeiro (2/3)</p>             | <p align="center">Tela do Dashboard Financeiro (3/3)</p>              | <p align="center">Tela de Pedidos</p>              |
+
+| ![Imagem 4](images/telas/tela-per.png) | ![Imagem 5](images/telas/tela-seguranca.png) |
+|------------------------------------|------------------------------------|
+| <p align="center">Tela de Pagamentos e Recebíveis</p>              | <p align="center">Tela de Controle de Segurança</p>              |
 
 ## Como Executar o Projeto
-1. Clone o repositório
-   ```bash
-   git clone [https://github.com/JoaoPedroFazzolo/ChallengeiFoodSprint2]
+[Acesse o projeto finalizado, online](https://ifood-challenge-2024.vercel.app/)
