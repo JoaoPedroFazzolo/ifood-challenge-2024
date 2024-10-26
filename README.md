@@ -1,18 +1,19 @@
 ﻿![Imagem 1](./images/logo-principal-ifood.svg)
  # Challenge iFood - Sprint 2
+## Colaboradores 🤝
 
-## Colaboradores
-- *Turma*: 1TDSOE
-- *Vinicius Rego Sacardi*  
-  RM: 555313
-- *João Pedro Oliveira Fazzolo*  
-  RM: 557205
-- *Osmar José Facin Júnior*  
-  RM: 558231
-- *Silvino Vieira Junior*  
-  RM: 557296
-- *Gabriel Martins Abujamra*  
-  RM: 556053
+- *Turma*: 1TDSOE / Tecnólogo em Análise e Desenvolvimento de Sistemas / FIAP
+
+<table>
+<tr>
+<td align="center" width="200"><pre><a href="https://github.com/juniorfacin"><img src="https://avatars.githubusercontent.com/u/129279398?v=4" width="200" alt="GitHub Profile picture of Osmar Jose Facin Junior" /><br><sub>Osmar Junior</sub></a><br>@juniorfacin</pre></td>
+<td align="center" width="200"><pre><a href="https://github.com/viniciussacardi"><img src="https://avatars.githubusercontent.com/u/143439175?v=4" width="200" alt="GitHub Profile picture of Vinicius Sacardi" /><br><sub>Vinicius Sacardi</sub></a><br>@viniciussacardi</pre></td>
+<td align="center" width="200"><pre><a href="https://github.com/vinovieira"><img src="https://avatars.githubusercontent.com/u/127680187?s=400&u=6a8001ef21a16504da936b2643c38de92060b62b&v=4" width="200" alt="GitHub Profile picture of Silvino Vieira" /><br><sub>Silvino Vieira</sub></a><br>@vinovieira</pre></td>
+<td align="center" width="200"><pre><a href="https://github.com/JoaoPedroFazzolo"><img src="https://avatars.githubusercontent.com/u/143749763?v=4" width="200" alt="GitHub Profile Picture of João Pedro Fazzolo"/><br><sub>João Pedro Fazzolo</sub></a><br>@JoaoPedroFazzolo</pre></td>
+<td align="center" width="200"><pre><a href="https://github.com/Gabriel"><img src="https://avatars.githubusercontent.com/u/143749763?v=4" width="200" alt="GitHub Profile Picture of Gabriel"/><br><sub>Gabriel</sub></a><br>@Gabriel</pre></td>
+
+</tr>
+</table>
 
 ## Descrição do Projeto
 Esta é uma aplicação financeira desenvolvida como parte do desafio do iFood na Sprint 2. O objetivo do projeto é criar uma interface amigável que possibilite o gerenciamento de receitas e despesas utilizando tecnologias modernas da web.
